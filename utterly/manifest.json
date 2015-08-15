@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2, 
+	"name": "Utterly", 
+	"version": "1.0", 
+	"description": "Replaces the words 'completely', 'totally', and 'entirely' with 'utterly'.", 
+	"content_scripts": 
+	[ 
+		{
+			"matches": ["*://*/*"], 
+			"js": ["parse.js"], 
+			"run_at": "document_end"
+		}
+	]
+}
